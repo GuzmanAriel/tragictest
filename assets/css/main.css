@@ -306,13 +306,8 @@ header #mobile_menu_icon.change .bar3 {
 }
 
 .header_image {
-  height: 450px;
+  height: 600px;
   position: relative;
-}
-@media screen and (min-width: 768px) {
-  .header_image {
-    height: 600px;
-  }
 }
 @media screen and (min-width: 1024px) {
   .header_image {
@@ -323,24 +318,31 @@ header #mobile_menu_icon.change .bar3 {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: rgba(103, 103, 103, 0.7);
+  background: rgba(38, 38, 38, 0.5);
 }
 .header_image .headline {
   position: absolute;
-  top: 50%;
+  top: 40%;
   z-index: 3;
-  transform: translate(-25%, -50%);
+  transform: translate(-5%, -50%);
   line-height: 1.2;
-  left: 35%;
+  left: 8%;
 }
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 550px) {
+  .header_image .headline {
+    top: 50%;
+    transform: translate(-25%, -50%);
+    left: 35%;
+  }
+}
+@media screen and (min-width: 768px) {
   .header_image .headline {
     transform: translate(-50%, -50%);
     left: 50%;
   }
 }
 .header_image .headline h1 {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 @media screen and (min-width: 450px) {
   .header_image .headline h1 {
@@ -375,7 +377,7 @@ header #mobile_menu_icon.change .bar3 {
   margin-bottom: 0;
 }
 .header_image .dot_nav .dot.dot_1 {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.3);
 }
 .header_image .dot_nav .dot.dot_2 {
   background: rgba(255, 255, 255, 0.5);
@@ -385,8 +387,8 @@ header #mobile_menu_icon.change .bar3 {
 }
 .header_image .dot_nav .arrow {
   box-sizing: border-box;
-  height: 2vw;
-  width: 2vw;
+  height: 30px;
+  width: 30px;
   border-style: solid;
   border-color: white;
   border-width: 0px 2px 2px 0px;

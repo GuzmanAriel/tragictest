@@ -1,10 +1,6 @@
 .header_image{
-  height:450px;
+  height:600px;
   position:relative;
-
-  @media screen and (min-width: 768px) {
-      height:600px;
-  }
   @media screen and (min-width: 1024px) {
       height:800px;
   }
@@ -13,23 +9,27 @@
     position:absolute;
     height:100%;
     width:100%;
-    background: rgba(103, 103, 103, .7);
+    background: rgba(38, 38, 38, .5);
   }
 
   .headline{
     position: absolute;
-    top: 50%;
+    top: 40%;
     z-index: 3;
-    transform: translate(-25%, -50%);
+    transform: translate(-5%, -50%);
     line-height: 1.2;
-    left: 35%;
-
-    @media screen and (min-width: 450px) {
+    left: 8%;
+    @media screen and (min-width: 550px) {
+      top: 50%;
+        transform: translate(-25%, -50%);
+        left: 35%;
+    }
+    @media screen and (min-width: 768px) {
         transform: translate(-50%, -50%);
         left: 50%;
     }
     h1{
-      font-size: 2.5em;
+      font-size: 2em;
       @media screen and (min-width: 450px) {
           font-size: 3em;
       }
@@ -63,7 +63,7 @@
       }
 
       &.dot_1{
-        background:rgba(255, 255, 255, .2);
+        background:rgba(255, 255, 255, .3);
       }
       &.dot_2{
         background:rgba(255, 255, 255, .5);
@@ -75,8 +75,8 @@
 
     .arrow{
       box-sizing: border-box;
-  height: 2vw;
-  width: 2vw;
+  height: 30px;
+  width: 30px;
   border-style: solid;
   border-color: white;
   border-width: 0px 2px 2px 0px;
