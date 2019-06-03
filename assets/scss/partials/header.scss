@@ -1,0 +1,41 @@
+.header_image{
+  height:450px;
+  position:relative;
+
+  @media screen and (min-width: 768px) {
+      height:600px;
+  }
+
+  .overlay{
+    position:absolute;
+    height:100%;
+    width:100%;
+    background: rgba(103, 103, 103, .7);
+  }
+
+  .headline{
+    position: absolute;
+    top: 50%;
+    z-index:3;
+    transform:translateY(-50%);
+    padding:0 40px;
+    line-height: 1.2;
+
+    @media screen and (min-width: 768px) {
+        padding:0 80px;
+    }
+    h1{
+
+      @media screen and (min-width: 500px) {
+          font-size: 3em;
+      }
+
+      span{
+        background: #DF1B3F;
+        padding-top:7px;
+        padding-left:5px;
+        padding-right:5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,161 @@
+/* THIS FILE IS FOR REGULARLY USED CLASESS AND TECHNIQUES ACROSS PROJECTS */
+
+//Remove padding and margin from user agent and well as box-sizing
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+	margin:0;
+	padding:0;
+}
+
+b{
+	font-weight: bold !important;
+}
+
+html{
+	overflow-x: hidden;
+}
+
+//over flow hidden to remove horizontal scroll
+html, body{
+  width:100%;
+  font-family: BebasNeueRegular,Arial,Helvetica,sans-serif;
+}
+
+
+.js {
+ visibility: visible;
+ opacity: 1;
+}
+
+//common hr for a visibile separation from sections
+hr{
+	color:#ebebeb;
+	width:100%;
+}
+
+
+//Used to uppercase text
+.uppercase{
+	text-transform: uppercase;
+}
+
+//used to italicize text
+.italics{
+	font-style: italic;
+}
+
+//text alignment
+.text_center{
+	text-align: center;
+}
+.text_left{
+	text-align: left;
+}
+.text_right{
+  text-align: right;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.white_text{
+  color:#fff;
+}
+
+.red_text{
+  color:#E6183F;
+}
+
+.black_bg{
+  background:#2d2d2d;
+}
+
+.flex{
+  display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+/*
+  Own H1 - H2 Styles
+  used when we do not want to use the actual tags particularly h1
+*/
+
+.h1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+}
+.h2 {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.h3 {
+    display: block;
+    font-size: 1.17em;
+    font-weight: bolder;
+}
+.h4 {
+    display: block;
+		font-size: 1em;
+    font-weight: bold;
+}
+.h5 {
+    display: block;
+    font-size: .83em;
+    font-weight: bold;
+}
+.h6 {
+    display: block;
+    font-size: .67em;
+    font-weight: bold;
+}
+
+//wrapper class to wrap around content to align correctly
+.wrapper {
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: 1200px;
+  padding: 40px;
+}
+
+//all buttons have the cursor pointer
+button{
+  cursor:pointer;
+}
+
+.black_text{
+	color:#000;
+}
+
+//no blue text for hyperlinks as well as undleriness
+a{
+  color: inherit;
+  text-decoration:none;
+}
+
+.normal_font{
+	font-weight:normal!important;
+  line-height: 1.3em;
+}
+.lighter_font{
+  font-weight:lighter !important;
+  line-height: 1.3em;
+}
+
+.bolder_font{
+  font-weight:bold !important;
+}
+
+.boldest_font{
+  font-weight:bolder !important;
+}
